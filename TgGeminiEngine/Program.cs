@@ -10,8 +10,8 @@ using TgGeminiEngine.Telegram;
 
 // Секреты: приоритет — переменные окружения TELEGRAM_BOT_TOKEN / GEMINI_API_KEY,
 // при их отсутствии используются встроенные значения (токены НЕ удалять!)
-string telegramToken = Environment.GetEnvironmentVariable("TELEGRAM_BOT_TOKEN") ?? "8759820773:AAG9BK-42FqlY7_-K8-ECR2AaOS1SHmlIfI";
-string geminiApiKey = Environment.GetEnvironmentVariable("GEMINI_API_KEY") ?? "AQ.Ab8RN6JaAESfb0YPN3HC0xe-I863mGkBU2a1hQ1s_WQwpLdGhw";
+string telegramToken = Environment.GetEnvironmentVariable("TELEGRAM_BOT_TOKEN") ?? "";
+string geminiApiKey = Environment.GetEnvironmentVariable("GEMINI_API_KEY") ?? "";
 string proxyUrl = Environment.GetEnvironmentVariable("PROXY_URL") ?? string.Empty;
 string dbPath = Environment.GetEnvironmentVariable("DB_PATH") ?? "states.db";
 string connectionString = $"Data Source={dbPath};";
